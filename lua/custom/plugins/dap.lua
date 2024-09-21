@@ -1,22 +1,16 @@
 return {
   {
-    "mfussenegger/nvim-dap",
+    'mfussenegger/nvim-dap',
   },
 
+  { 'rcarriga/nvim-dap-ui', dependencies = { 'mfussenegger/nvim-dap', 'nvim-neotest/nvim-nio' } },
   {
-    "rcarriga/nvim-dap-ui",
-      requires = {'mfussenegger/nvim-dap'},
-      config = function ()
-        require('dapui').setup({})
-      end
+    'theHamsta/nvim-dap-virtual-text',
   },
   {
-    "theHamsta/nvim-dap-virtual-text",
+    'nvim-telescope/telescope-dap.nvim',
   },
   {
-    "nvim-telescope/telescope-dap.nvim",
+    'mfussenegger/nvim-dap-python',
   },
-  {
-    "mfussenegger/nvim-dap-python",
-  }
 }
