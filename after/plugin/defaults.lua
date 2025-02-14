@@ -10,7 +10,7 @@ vim.opt.list = true -- shows whitespaces
 vim.opt.termguicolors = true
 vim.opt.background = 'dark'
 
-vim.cmd 'colorscheme kanagawa'
+vim.cmd 'colorscheme github_light'
 vim.cmd [[set grepprg=rg\ --vimgrep\ --no-heading\ --hidden\ --smart-case]]
 vim.cmd 'set nohlsearch noincsearch'
 vim.cmd 'set cc=80' -- shows line for file width.
