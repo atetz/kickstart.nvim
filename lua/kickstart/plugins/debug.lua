@@ -146,8 +146,9 @@ return {
         detached = vim.fn.has 'win32' == 0,
       },
     }
-    require('dap').adapters.python = nil
-    require('dap').configurations.python = nil
+    -- reset python entry
+    -- if i get here in future, reload the plugin too with lazy...
+    dap.configurations.python = {}
     require('dap-python').setup('uv')
   end,
 }
