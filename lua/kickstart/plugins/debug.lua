@@ -146,6 +146,8 @@ return {
         detached = vim.fn.has 'win32' == 0,
       },
     }
-    require("dap-python").setup("uv")
+    require('dap').adapters.python = nil
+    require('dap').configurations.python = nil
+    require('dap-python').setup('uv')
   end,
 }
