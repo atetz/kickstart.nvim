@@ -43,9 +43,6 @@ keymap('n', '<F12>', ":lua require'dap'.step_out()<CR>", opts)
 keymap('n', '<Leader>b', ":lua require'dap'.toggle_breakpoint()<CR>", opts)
 keymap('n', '<Leader>B', ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", opts)
 
---debug settings
-require('dap-python').setup '~/.virtualenvs/debugpy/bin/python'
-
 local dap, dapui = require 'dap', require 'dapui'
 dap.listeners.after.event_initialized['dapui_config'] = function()
   dapui.open()
